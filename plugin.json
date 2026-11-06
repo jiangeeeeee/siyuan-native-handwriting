@@ -1,0 +1,33 @@
+{
+  "name": "siyuan-native-handwriting",
+  "author": "jiangeeeeee",
+  "url": "https://github.com/jiangeeeeee/siyuan-native-handwriting",
+  "version": "0.14.4",
+  "minAppVersion": "3.8.4",
+  "backends": [
+    "windows",
+    "linux",
+    "darwin",
+    "android",
+    "ios",
+    "harmony"
+  ],
+  "frontends": [
+    "desktop",
+    "desktop-window",
+    "mobile",
+    "browser-desktop",
+    "browser-mobile"
+  ],
+  "displayName": {
+    "default": "源生笔迹",
+    "zh_CN": "源生笔迹"
+  },
+  "description": {
+    "default": "Let ideas flow in ink. Pressure-sensitive writing, note annotations, and a freeform whiteboard.",
+    "zh_CN": "落笔有形，思绪有迹。压感手写、正文批注与自由白板。"
+  },
+  "readme": {
+    "default": "README.md"
+  }
+}
