@@ -1,9 +1,8 @@
-# 思源笔记手写
+#源生笔迹
 
 > 思源笔记的轻量化手写插件，支持正文批注与自由白板。
 
-本仓库为私有源码仓库，保留完整插件工程、授权服务、构建脚本和测试。
-公开安装包、测试报告和使用指南见[发行仓库](https://github.com/jiangeeeeee/siyuan-native-handwriting)。
+本仓库为源生笔迹[发行仓库](https://github.com/jiangeeeeee/siyuan-native-handwriting)。
 
 **当前版本：** `0.14.4` · **思源笔记要求：** `3.8.4` 及以上
 
