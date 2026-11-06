@@ -43,40 +43,39 @@ Pro 提供铅笔、圈选擦除、选区换色与缩放、照片生成、图层�
 
 要求思源笔记 **3.8.4 或更高版本**。推荐使用支持触控笔及压感输入的设备，以获得更完整的书写体验。
 
-> **开发说明：** 仓库中的授权管理服务目前仅用于内部开发。
+## Pro 购买与激活
 
-## 项目结构
+笔迹 Pro 授权码可在淘宝[铛铛学长的小店](https://m.tb.cn/h.jSTvJj45DK7IVMR)购买，价格为 **¥29.9／永久**。
 
-| 目录 | 用途 |
+1. 打开插件授权窗口，复制「当前思源账号 ID」。
+2. 购买后将该 ID 发给店铺客服，取得对应的 HW1 授权码。
+3. 在授权窗口粘贴完整授权码，点击「激活 Pro」。
+
+授权绑定思源账号，同一账号可在多台设备使用相同授权码。0.14.4 在本机完成签名校验，用户无需安装或部署授权服务器。订单确认和发码由客服完成。
+
+## 安装包与使用资料
+
+[获取 0.14.4 安装包](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.4/package.zip) · [查看 Release](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/tag/v0.14.4)
+
+| 资料 | 内容 |
 | --- | --- |
-| [siyuan-native-handwriting](./siyuan-native-handwriting/README.md) | 插件源码、构建脚本、测试与使用说明。 |
-| [siyuan-license-server](./siyuan-license-server/README.md) | Pro 激活与授权管理服务，包含本机运行和部署说明。 |
+| [使用指南](docs/使用指南.md) | 功能入口、操作步骤及免费版／Pro 范围。 |
+| [功能动图](docs/动图索引.md) | 13 段操作演示。 |
+| [完整功能测试报告](<docs/源生笔迹 0.14.4 完整功能测试报告.pdf>) | 功能验收步骤、结果与截图。 |
+| [安装包校验值](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.4/SHA256SUMS.txt) | 当前 Release 安装包的 SHA-256。 |
 
-## 📦 安装包与构建
+安装包 SHA-256：
 
-### 正式发布包
-
-[获取 0.14.4 安装包](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.4/package.zip) · [完整源码与校验值](./releases/0.14.4/README.md)
-
-文件路径：`releases/0.14.4/package.zip`。
-
-SHA-256：`6f13db80dae0d4df96beb541660ce3b9e848ef6541efc6be9f265a81458bd352`。
-
-### 从源码构建
-
-使用 **Node.js 26**、**pnpm 11** 和 **Python 3**，在仓库根目录打开终端并执行：
-
-```bash
-cd siyuan-native-handwriting
-pnpm install --frozen-lockfile
-pnpm run build
-python3 scripts/package_plugin.py
+```text
+60a02638169d1a64617b17bc9c7dfbee45b61463182bc53da883144e451c4c19
 ```
 
-构建后的安装包位于 `siyuan-native-handwriting/artifacts/siyuan-native-handwriting-0.14.4-account.zip`。
+## 源码审核
+
+完整源码、构建脚本和测试通过私有仓库提供给思源指定审核人员。本公开仓库用于插件发行、安装更新及使用文档。
 
 ## 许可说明
 
-本项目自有部分适用 [商业使用许可](./siyuan-native-handwriting/LICENSE)，并授权思源官方集市分发完整安装包。
+本项目自有部分适用[商业使用许可](LICENSE)，并授权思源官方集市分发完整安装包。
 
-[第三方组件](./siyuan-native-handwriting/THIRD_PARTY_NOTICES.md) 继续适用各自的原许可证。
+[第三方组件](THIRD_PARTY_NOTICES.md)继续适用各自的原许可证。
