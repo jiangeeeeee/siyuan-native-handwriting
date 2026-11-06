@@ -4,8 +4,16 @@
 
 本仓库为源生笔迹[发行仓库](https://github.com/jiangeeeeee/siyuan-native-handwriting)。
 
-**当前版本：** `0.14.4` · **思源笔记要求：** `3.8.4` 及以上
+**当前版本：** `0.14.5` · **思源笔记要求：** `3.8.4` 及以上
 
+
+## 0.14.5 更新：同步文件存储逻辑
+
+笔迹改为按文档、白板和设备更新固定文件，连续书写时复用文件。自动备份只保存有变化的内容，每篇轮换保留当前版和上一版；空文档、未修改文档和反复启停不再新增重复备份。
+
+新增「三个点 → 备份与恢复 → 整理同步文件」，可将旧笔迹日志与历史备份按文档合并、去重。合并文件写入并回读校验后，再移除对应旧文件；笔迹、删除记录和图层状态一并保留。
+
+参与同步的设备请统一更新到 0.14.5，再继续跨设备书写。
 
 ## ✨ 插件介绍
 
@@ -37,7 +45,7 @@
 
 ## 版本与使用说明
 
-当前 **0.14.4** 支持钢笔、马克笔和彩笔、精确擦除和笔画擦除、圈选移动与基础编辑、白板书写与缩放、输入切换、撤销重做及笔迹备份恢复。
+当前 **0.14.5** 支持钢笔、马克笔和彩笔、精确擦除和笔画擦除、圈选移动与基础编辑、白板书写与缩放、输入切换、撤销重做及笔迹备份恢复。
 
 Pro 提供铅笔、圈选擦除、选区换色与缩放、照片生成、图层、激光笔、白板插入与双链、PDF／HTML／SVG 导出、多指撤销重做和工具栏外观。
 
@@ -51,23 +59,24 @@ Pro 提供铅笔、圈选擦除、选区换色与缩放、照片生成、图层�
 2. 购买后将该 ID 发给店铺客服，取得对应的 HW1 授权码。
 3. 在授权窗口粘贴完整授权码，点击「激活 Pro」。
 
-授权绑定思源账号，同一账号可在多台设备使用相同授权码。0.14.4 在本机完成签名校验，用户无需安装或部署授权服务器。订单确认和发码由客服完成。
+授权绑定思源账号，同一账号可在多台设备使用相同授权码。0.14.5 在本机完成签名校验，用户无需安装或部署授权服务器。订单确认和发码由客服完成。
 
 ## 安装包与使用资料
 
-[获取 0.14.4 安装包](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.4/package.zip) · [查看 Release](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/tag/v0.14.4)
+[获取 0.14.5 安装包](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.5/package.zip) · [查看 Release](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/tag/v0.14.5)
 
 | 资料 | 内容 |
 | --- | --- |
+| [0.14.5 同步文件存储更新报告](docs/0.14.5-同步文件存储更新报告.md) | 存储逻辑前后对比、合并结果及测试结论。 |
 | [使用指南](docs/使用指南.md) | 功能入口、操作步骤及免费版／Pro 范围。 |
 | [功能动图](docs/动图索引.md) | 13 段操作演示。 |
-| [完整功能测试报告](<docs/源生笔迹 0.14.4 完整功能测试报告.pdf>) | 功能验收步骤、结果与截图。 |
-| [安装包校验值](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.4/SHA256SUMS.txt) | 当前 Release 安装包的 SHA-256。 |
+| [完整功能测试报告（0.14.4）](<docs/源生笔迹 0.14.4 完整功能测试报告.pdf>) | 功能验收步骤、结果与截图。 |
+| [安装包校验值](https://github.com/jiangeeeeee/siyuan-native-handwriting/releases/download/v0.14.5/SHA256SUMS.txt) | 当前 Release 安装包的 SHA-256。 |
 
 安装包 SHA-256：
 
 ```text
-60a02638169d1a64617b17bc9c7dfbee45b61463182bc53da883144e451c4c19
+21c23aad523d32214fd9b3048b12a0640ba0be705674de22085a99228f1dcd31
 ```
 
 ## 源码审核
