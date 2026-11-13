@@ -2,7 +2,7 @@
   "name": "siyuan-native-handwriting",
   "author": "jiangeeeeee",
   "url": "https://github.com/jiangeeeeee/siyuan-native-handwriting",
-  "version": "0.14.8",
+  "version": "0.14.9",
   "minAppVersion": "3.8.4",
   "backends": ["windows", "linux", "darwin", "android", "ios", "harmony"],
   "frontends": [
